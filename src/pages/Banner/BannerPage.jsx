@@ -17,7 +17,7 @@ import { items } from "./BannerData";
 const BannerPage = () => {
   return (
     <>
-      <div className="bg-gray-200">
+      <div className="bg-slate-200 pb-12 pt-1 dark:bg-slate-900">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay, Pagination]}
@@ -27,7 +27,7 @@ const BannerPage = () => {
             disableOnInteraction: false,
           }}
           pagination={true}
-          className="mySwiper max-w-screen-xl"
+          className="mySwiper max-w-screen-xl mt-3"
         >
           {items.map((value, index) => (
             <SwiperSlide key={value.id}>
