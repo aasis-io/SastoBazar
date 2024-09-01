@@ -3,7 +3,7 @@ import Logo from "../../assets/images/logo.png";
 import LogoLight from "../../assets/images/LogoLight.png";
 
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("darkMode") === "true";
@@ -52,7 +52,7 @@ const Footer = () => {
               </p>
               <div className="flex gap-3 mt-4">
                 <a
-                  href=""
+                  href="https://www.facebook.com/" target="__blank"
                   className="text-gray-800 dark:text-slate-50 hover:text-cyan-500 duration-300"
                 >
                   <FaTwitter className="h-6 w-6" />
@@ -78,17 +78,17 @@ const Footer = () => {
                 </span>
                 <ul className="mt-2 p-0 m-0 text-gray-800 dark:text-slate-50">
                   <li className="flex">
-                    <a
-                      href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                    <Link
+                      to="/about-us"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Features
                     </a>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Shop
                     </a>
@@ -104,7 +104,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Download App
                     </a>
@@ -119,7 +119,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Customer Support
                     </a>
@@ -127,7 +127,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Delivery Details
                     </a>
@@ -135,7 +135,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Terms & Conditions
                     </a>
@@ -143,7 +143,7 @@ const Footer = () => {
                   <li className="flex">
                     <a
                       href=""
-                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-orange-600 duration-300 ease-in-out"
+                      className="no-underline text-gray-800 dark:text-slate-50 py-2 hover:text-sky-600 duration-300 ease-in-out"
                     >
                       Privacy Policy
                     </a>
@@ -160,7 +160,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="text-gray border border-gray-300 py-3 px-2 pr-8 text-base focus:outline-none rounded w-96 mt-3 block"
                 />
-                <button className="bg-sky-600 text-white py-3 px-4 rounded mt-2 hover:bg-orange-500 ease-in-out duration-300">
+                <button className="bg-sky-600 text-white py-3 px-4 rounded mt-2 hover:bg-sky-500 ease-in-out duration-300">
                   Subscribe
                 </button>
               </div>

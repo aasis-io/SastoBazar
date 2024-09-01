@@ -68,12 +68,12 @@ const Header = () => {
             </button>
           </div>
           <div className="flex items-center ml-2">
-            <div className="flex items-center">
-              <FaRegCircleUser className="h-6 w-6 text-slate-900 dark:text-slate-50" />
+            <div className="">
               <NavLink
                 to={"/sastobazar-login"}
-                className="ml-1 text-slate-900 dark:text-slate-50 text-base font-medium no-underline"
+                className="ml-1 text-slate-900 dark:text-slate-50 text-base font-medium no-underline flex items-center gap-1"
               >
+                <FaRegCircleUser className="h-6 w-6 text-slate-900 dark:text-slate-50" />
                 Login
               </NavLink>
             </div>
